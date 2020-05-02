@@ -25,7 +25,17 @@ public class Case1Details extends AppCompatActivity {
         while(c.moveToNext())
         {
             buffer.append("ComplaintId: "+c.getString(0)+"\n");
-            buffer.append("Assigned: "+c.getString(1)+"\n\n");
+            buffer.append("Complaintstatus: "+c.getString(1)+"\n");
+            buffer.append("type: "+c.getString(2)+"\n");
+            buffer.append("Victimname "+c.getString(3)+"\n");
+            buffer.append("Convictname: "+c.getString(4)+"\n");
+            buffer.append("Complaintnama: "+c.getString(5)+"\n");
+            buffer.append("mobile: "+c.getString(6)+"\n");
+            buffer.append("place: "+c.getString(7)+"\n");
+            buffer.append("date: "+c.getString(8)+"\n");
+            buffer.append("time: "+c.getString(9)+"\n");
+           // buffer.append("ComplaintId: "+c.getString(10)+"\n");
+            buffer.append("Assigned: "+c.getString(10)+"\n\n");
         }
         showMessage("Complaint Details are :", buffer.toString());
         //clearText();
